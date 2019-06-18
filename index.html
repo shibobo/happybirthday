@@ -157,7 +157,7 @@
             tree.snapshot("p1", 240, 0, 610, 680);
             while (tree.move("p1", 500, 0)) {
                 foot.draw();
-                $await(Jscex.Async.sleep(5000));
+                $await(Jscex.Async.sleep(100));
             }
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
@@ -191,7 +191,7 @@
             $("#clock-box").fadeIn(500);
             while (true) {
                 timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
+                $await(Jscex.Async.sleep(5000));
             }
         }));
 
