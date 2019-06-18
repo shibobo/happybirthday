@@ -126,16 +126,16 @@
         var seedAnimate = eval(Jscex.compile("async", function () {
             seed.draw();
             while (hold) {
-                $await(Jscex.Async.sleep(1000));
+                $await(Jscex.Async.sleep(10));
             }
             while (seed.canScale()) {
                 seed.scale(0.95);
-                $await(Jscex.Async.sleep(1000));
+                $await(Jscex.Async.sleep(10));
             }
             while (seed.canMove()) {
                 seed.move(0, 2);
                 foot.draw();
-                $await(Jscex.Async.sleep(1000));
+                $await(Jscex.Async.sleep(10));
             }
         }));
 
