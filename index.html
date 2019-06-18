@@ -142,7 +142,7 @@
         var growAnimate = eval(Jscex.compile("async", function () {
             do {
               tree.grow();
-                $await(Jscex.Async.sleep(10));
+                $await(Jscex.Async.sleep(20));
             } while (tree.canGrow());
         }));
 
