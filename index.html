@@ -141,14 +141,14 @@
         var growAnimate = eval(Jscex.compile("async", function () {
             do {
               tree.grow();
-                $await(Jscex.Async.sleep(20));
+                $await(Jscex.Async.sleep(10));
             } while (tree.canGrow());
         }));
 
         var flowAnimate = eval(Jscex.compile("async", function () {
             do {
               tree.flower(2);
-                $await(Jscex.Async.sleep(20));
+                $await(Jscex.Async.sleep(10));
             } while (tree.canFlower());
         }));
 
@@ -156,7 +156,7 @@
             tree.snapshot("p1", 240, 0, 610, 680);
             while (tree.move("p1", 500, 0)) {
                 foot.draw();
-                $await(Jscex.Async.sleep(130));
+                $await(Jscex.Async.sleep(60));
             }
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
